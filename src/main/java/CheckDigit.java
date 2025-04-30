@@ -8,9 +8,8 @@ public class CheckDigit
    public static int getCheck(int num) 
    {  
      /* to be implemented in part (a) */
-     int count = getNumberOfDigits(num);
      int sum = 0;
-     for(int i = 0; i <= count; i++){
+     for(int i = 0; i <= getNumberOfDigits(num); i++){
        sum += (8-i) * getDigit(num, i);
      }
      return sum%10;
